@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main-heading">
+        <h1>Budgeting App</h1>
+    </div>
+    
+    <div class="Add-Expense" >
+        <h2>Add Expense</h2> <br> 
+        <input type="text" placeholder="Expense Description" id="ExpenseDescription">
+        <input type="text" placeholder="Expense Amount" id="ExpenseAmount"> <br> <br>
+        <input type="date" id="dates">
+    
+        <button type="button" value="Add Expense" id="AddExpense" class="Expense-btn">Add Expense</button>
+    </div>
+    <div class="Set-Budge"> 
+        <h2>Set Budget</h2> <br>
+        <input type="text" placeholder="budget amount" id="BudgetAmount" class="Amount-search">
+        <span><button type="button" value="add budget" id="AddBudget" class="Expense-btn"> Add Budget</button></span>
+
+    </div> <br>
+    <div class="Total-Budget ">
+
+    <div>
+        <h2>Total Budget </h2> <hr> <br>
+        <span id="Bud-get">0</span>
+        
+    </div>
+    <div>
+        <h2>Expense</h2><hr> <br>
+        <span id="Expense">0</span>
+        
+    </div>
+    <div>
+        <h2>Balance</h2><hr> <br>
+        <span id="Balance">0</span>
+
+    </div>
+    </div> <br>
+
+    <div class="Expense-list">
+        <h2>Expense list</h2>
+    </div> <br>
+    <div class="lastcontiner">
+        <div >
+        <h4 >Description</h4><hr> <br>
+        <span id="des">0</span>
+    </div>
+    <div>
+        <h4 >Expense amount</h4><hr> <br>
+        <span id="exp">0</span>
+    </div>
+    <div>
+        <h4 >Date</h4><hr> <br>
+        <span id="dat">0</span>
+    </div>  
+</div> 
+        
+    
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
