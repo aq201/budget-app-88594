@@ -8,25 +8,25 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="main-heading">
-        <h1>Budgeting App</h1>
-    </div>
+    <div class="main-heading"><!-- start of main-heading -->
+     <h1>Budgeting App</h1>
+    </div><!-- end of main-heading -->
     
-    <div class="Add-Expense" >
+    <div class="Add-Expense" > <!-- start of Add-Expense -->
         <h2>Add Expense</h2> <br> 
         <input type="text" placeholder="Expense Description" id="ExpenseDescription">
         <input type="text" placeholder="Expense Amount" id="ExpenseAmount"> <br> <br>
         <input type="date" id="dates">
     
-        <button type="button" value="Add Expense" id="AddExpense" class="Expense-btn">Add Expense</button>
-    </div>
-    <div class="Set-Budge"> 
+        <button type="button" value="Add Expense" id="AddExpense" class="Expense-btn" onclick="greet()">Add Expense</button>
+    </div><!-- end of Add-Expense -->
+    <div class="Set-Budge"> <!-- start of set-Budget-->
         <h2>Set Budget</h2> <br>
         <input type="text" placeholder="budget amount" id="BudgetAmount" class="Amount-search">
-        <span><button type="button" value="add budget" id="AddBudget" class="Expense-btn"> Add Budget</button></span>
+        <span><button type="button" value="add budget" id="AddBudget" class="Expense-btn" onclick="greet1()"> Add Budget</button></span>
 
-    </div> <br>
-    <div class="Total-Budget ">
+    </div> <br><!-- end of Set-Budget -->
+    <div class="Total-Budget "><!-- start of Total-Budget  -->
 
     <div>
         <h2>Total Budget </h2> <hr> <br>
@@ -43,12 +43,12 @@
         <span id="Balance">0</span>
 
     </div>
-    </div> <br>
+    </div> <br><!-- end of Total-Budget -->
 
-    <div class="Expense-list">
+    <div class="Expense-list"><!-- start of Expense-list -->
         <h2>Expense list</h2>
-    </div> <br>
-    <div class="lastcontiner">
+    </div> <br><!-- end of Expense-list -->
+    <div class="lastcontiner"><!-- start of lastcontiner -->
         <div >
         <h4 >Description</h4><hr> <br>
         <span id="des">0</span>
@@ -61,7 +61,7 @@
         <h4 >Date</h4><hr> <br>
         <span id="dat">0</span>
     </div>  
-</div> 
+    </div> <!-- end of lastcontiner -->
         
     
 
