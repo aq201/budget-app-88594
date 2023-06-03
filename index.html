@@ -15,14 +15,14 @@
     <div class="Add-Expense" > <!-- start of Add-Expense -->
         <h2>Add Expense</h2> <br> 
         <input type="text" placeholder="Expense Description" id="ExpenseDescription">
-        <input type="text" placeholder="Expense Amount" id="ExpenseAmount"> <br> <br>
+        <input type="number" placeholder="Expense Amount" id="ExpenseAmount"> <br> <br>
         <input type="date" id="dates">
     
         <button type="button" value="Add Expense" id="AddExpense" class="Expense-btn" onclick="greet()">Add Expense</button>
     </div><!-- end of Add-Expense -->
     <div class="Set-Budge"> <!-- start of set-Budget-->
         <h2>Set Budget</h2> <br>
-        <input type="text" placeholder="budget amount" id="BudgetAmount" class="Amount-search">
+        <input type="number" placeholder="budget amount" id="BudgetAmount" class="Amount-search">
         <span><button type="button" value="add budget" id="AddBudget" class="Expense-btn" onclick="greet1()"> Add Budget</button></span>
 
     </div> <br><!-- end of Set-Budget -->
@@ -51,18 +51,17 @@
 
 
     <div class="lastcontiner"><!-- start of lastcontiner -->
-        <div >
-        <h4 >Description</h4><hr> <br>
-        <span id="des"></span>
-    </div>
-    <div>
-        <h4 >Expense amount</h4><hr> <br>
-        <span id="exp">0</span>
-    </div>
-    <div>
-        <h4 >Date</h4><hr> <br>
-        <span id="dat">0</span>
-    </div>  
+        <div class="list headings">
+            <div>
+                <h4>Description</h4><hr> <br>
+            </div>
+            <div>
+                <h4>Expense amount</h4><hr> <br>
+            </div>
+            <div>
+                <h4>Date</h4><hr> <br>
+            </div>
+            </div>
     </div> <!-- end of lastcontiner -->
         
     

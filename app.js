@@ -27,50 +27,59 @@ function greet1(){
     inputText = "";
 
  }
+ 
   
 //console.log(inputText)
 
   
 }
 // set function of expense and description
-var inputText2 = 0;
-var inputText3 = 0;
-var inputText4 = 0;
+
+var listdiv = document.querySelector('.lastcontiner');
+var exptotal = "";
 var saved = [];
-function greet(){
+function greet() {
+
+
    var saves = {
-   expense: inputText2 = ExpenseAmount.value ,
-   description: inputText3 =  ExpenseDescription.value,
-   date: inputText4 = dates.value,
-}
-   if(inputText2 === "" || inputText2 < 0 ){
-
-   }else{
-      expense1.innerText = inputText2;
-      exp.innerText = inputText2;
-      inputText2 = "";
-      
+      expense: ExpenseAmount.value,
+      description: ExpenseDescription.value,
+      date: dates.value,
    }
-   if(inputText3 === "" || inputText3 < 0){
 
-   }else{
-      des.innerText = inputText3;
+   exptotal = ExpenseAmount.value ;
+   expense1.innerText = exptotal;
 
-   
-   }if (inputText4 === "" || inputText4 < 0){
 
-   }else{
-      dat.innerText = inputText4;
-   }
-   
-   
-      saved.push(saves);
-      
-      var sringify = JSON.stringify(saved);
-      localStorage.setItem("saved", sringify);
-        console.log(saved);
+         
+
+   saved.push(saves);
+
+   var expenseAmount = saves.expense;
+   var expenseDescription = saves.description;
+   var date = saves.date;
+
+   var listcode = `
+   <div class="list">
+    <div>
+        <span id="des">${expenseDescription}</span>
+    </div>
+    <div>
+        <span id="exp">${expenseAmount}</span>
+    </div>
+    <div>
+        <span id="dat">${date}</span>
+    </div>
+   </div>
+`;
+
+   listdiv.innerHTML += listcode;
+
+
 
 }
+
+
 
 
 
