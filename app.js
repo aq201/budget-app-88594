@@ -55,6 +55,7 @@ function greet(){
 
    }else{
       des.innerText = inputText3;
+
    
    }if (inputText4 === "" || inputText4 < 0){
 
@@ -62,12 +63,15 @@ function greet(){
       dat.innerText = inputText4;
    }
    
+   
       saved.push(saves);
+      
       var sringify = JSON.stringify(saved);
       localStorage.setItem("saved", sringify);
-      //   console.log(saved);
+        console.log(saved);
 
 }
+
 
 
 
