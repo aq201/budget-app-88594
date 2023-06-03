@@ -1,3 +1,5 @@
+alert("Wel Come to Budget App")
+// value get by id
 var BudgetAmount =document.getElementById("BudgetAmount");
 var AddBudget = document.getElementById("AddBudget");
 var ExpenseDescription = document.getElementById("ExpenseDescription");
@@ -10,10 +12,12 @@ var Balance = document.getElementById("Balance");
 var des = document.getElementById("des");
 var exp = document.getElementById("exp");
 var dat = document.getElementById("dat");
+// set budget fucnction
 var inputText = 0;
 function greet1(){
    inputText = BudgetAmount.value;
  if(inputText === "" || inputText < 0){
+   
    
   
 
@@ -28,6 +32,7 @@ function greet1(){
 
   
 }
+// set function of expense and description
 var inputText2 = 0;
 var inputText3 = 0;
 var inputText4 = 0;
@@ -56,10 +61,11 @@ function greet(){
    }else{
       dat.innerText = inputText4;
    }
+   
       saved.push(saves);
-   var sringify = JSON.stringify(saved);
-   localStorage.setItem("saved", sringify);
-//   console.log(saved);
+      var sringify = JSON.stringify(saved);
+      localStorage.setItem("saved", sringify);
+      //   console.log(saved);
 
 }
 
