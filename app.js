@@ -57,7 +57,7 @@ function greet(){
       dat.innerText = inputText4;
    }
       saved.push(saves);
-   let sringify = JSON.stringify(saved);
+   var sringify = JSON.stringify(saved);
    localStorage.setItem("saved", sringify);
 //   console.log(saved);
 
